@@ -40,10 +40,13 @@ int main() {
     mergeSort(v,t, 0, v.size() - 1);
     clock_t end_mergeSort = clock();
 
-    // check output, make sure it's sorted
+    // check output, make sure vector is sorted after mergeSort
     for(int i = 1; i < v.size(); i++) {
         assert(v.at(i-1) <= v.at(i));
     }
+
+    // check output, make sure array is sorted after bubbleSort
+    /* your code here */
 
     clock_t start_bubbleSort = clock();
     // sort array using bubbleSort
