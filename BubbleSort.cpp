@@ -9,6 +9,7 @@ void mergeSort(vector<int>& a, vector<int>& tmp, int left, int right);
 void mergeSortedLists(vector<int>& a, vector<int>& tmp, int leftPos, int rightPos, int rightEnd);
 
 // BubbleSort function declaration
+void swap (int *a, int *b);
 void bubbleSort(int *a, int n);
 
 int main() {
@@ -102,6 +103,11 @@ void mergeSort(vector<int>& a, vector<int>& tmp, int left, int right) {
         mergeSort(a, tmp, center + 1, right);
         mergeSortedLists(a, tmp, left, center + 1, right);
     }
+}
+
+// Swap function
+void swap(int *a, int *b) {
+    /* your code here */
 }
 
 // BubbleSort function
